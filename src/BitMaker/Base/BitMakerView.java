@@ -89,6 +89,7 @@ public class BitMakerView extends GameView {
 					sound.Play("00", 10, 10, 0, 1);
 				}
 			});
+			
 			btn[1].setOnActionControl(new IControllable() {
 				@Override
 				public void onActionUp(float x, float y) {
@@ -106,6 +107,7 @@ public class BitMakerView extends GameView {
 					sound.Play("01", 10, 10, 0, 1);
 				}
 			});
+			
 			btn[2].setOnActionControl(new IControllable() {
 				@Override
 				public void onActionUp(float x, float y) {
@@ -123,6 +125,7 @@ public class BitMakerView extends GameView {
 					sound.Play("02", 10, 10, 0, 1);
 				}
 			});
+			
 			btn[3].setOnActionControl(new IControllable() {
 				@Override
 				public void onActionUp(float x, float y) {
@@ -295,7 +298,7 @@ public class BitMakerView extends GameView {
 				@Override
 				public void onActionDown(float x, float y) {
 					// TODO 비트를 들려준다.
-					sound.Play("drum1", 10, 10, 0, 1);
+					sound.Play("12", 10, 10, 0, 1);
 				}
 			});
 			
@@ -313,7 +316,7 @@ public class BitMakerView extends GameView {
 				@Override
 				public void onActionDown(float x, float y) {
 					// TODO 비트를 들려준다.
-					sound.Play("drum2", 10, 10, 0, 1);
+					sound.Play("13", 10, 10, 0, 1);
 				}
 			});
 			
@@ -331,7 +334,7 @@ public class BitMakerView extends GameView {
 				@Override
 				public void onActionDown(float x, float y) {
 					// TODO 비트를 들려준다.
-					sound.Play("drum3", 10, 10, 0, 1);
+					sound.Play("14", 10, 10, 0, 1);
 				}
 			});
 		}
