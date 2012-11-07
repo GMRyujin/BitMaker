@@ -1,5 +1,6 @@
 package Technology.Control;
 
+import Technology.Game.GameWorld;
 import Technology.Interface.IControllable;
 import Technology.Interface.IDrawable;
 import Technology.Interface.IUpdateable;
@@ -78,6 +79,20 @@ public class GameButton implements IDrawable, IUpdateable, IControllable {
 	
 	public void SetCurrentColor(int color){
 		nowColor = color;
+	}
+	public void AddWorld()
+	{
+		GameWorld world = GameWorld.getInstance();
+		world.Add((IControllable)this);
+		world.Add((IUpdateable)this);
+		world.Add((IDrawable)this);
+	}
+	public void RemoveWorld()
+	{
+		GameWorld world = GameWorld.getInstance();
+		world.Remove((IControllable)this);
+		world.Remove((IUpdateable)this);
+		world.Remove((IDrawable)this);
 	}
 	
 	/**
