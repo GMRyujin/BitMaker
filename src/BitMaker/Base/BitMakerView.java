@@ -36,13 +36,23 @@ public class BitMakerView extends GameView {
 			loader.put("ButttonDown", com.example.bitmaker.R.drawable.bit_button_down);
 			
 			final GameSound sound = GameSound.getInstance();
-			sound.Load("sel", R.raw.select);
-			sound.Load("drum1", R.raw.sound_drum1);
-			sound.Load("drum2", R.raw.sound_drum2);
-			sound.Load("drum3", R.raw.sound_drum3);
-			sound.Load("dung", R.raw.dung);
+			sound.Load("00", R.raw.00);
+			sound.Load("01", R.raw.01);
+			sound.Load("02", R.raw.02);
+			sound.Load("03", R.raw.03);
+			sound.Load("04", R.raw.04);
+			sound.Load("05", R.raw.05);
+			sound.Load("06", R.raw.06);
+			sound.Load("07", R.raw.07);
+			sound.Load("08", R.raw.08);
+			sound.Load("09", R.raw.09);
+			sound.Load("10", R.raw.10);
+			sound.Load("11", R.raw.11);
+			sound.Load("12", R.raw.12);
+			sound.Load("13", R.raw.13);
+			sound.Load("14", R.raw.14);
 			
-			MusicPlayer.put("heart_beat", R.raw.heart_beating_at_normal_speed);
+			
 			
 			int width = GetScreenWidth();
 			int height = GetScreenHeight();
