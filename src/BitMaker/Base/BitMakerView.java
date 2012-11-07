@@ -1,18 +1,16 @@
 package BitMaker.Base;
 
-import com.example.bitmaker.*;
-import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
 import Technology.Base.GameView;
-import Technology.Base.GameView.GameThread;
 import Technology.Control.AnimatedGameButton;
 import Technology.Game.GameWorld;
 import Technology.Interface.IControllable;
 import Technology.Util.BitmapLoader;
 import Technology.Util.GameSound;
-import Technology.Util.MusicPlayer;
-import Technology.Util.TechVibrator;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+
+import com.example.bitmaker.R;
 
 public class BitMakerView extends GameView {
 
@@ -36,21 +34,21 @@ public class BitMakerView extends GameView {
 			loader.put("ButttonDown", com.example.bitmaker.R.drawable.bit_button_down);
 			
 			final GameSound sound = GameSound.getInstance();
-			sound.Load("00", R.raw.00);
-			sound.Load("01", R.raw.01);
-			sound.Load("02", R.raw.02);
-			sound.Load("03", R.raw.03);
-			sound.Load("04", R.raw.04);
-			sound.Load("05", R.raw.05);
-			sound.Load("06", R.raw.06);
-			sound.Load("07", R.raw.07);
-			sound.Load("08", R.raw.08);
-			sound.Load("09", R.raw.09);
-			sound.Load("10", R.raw.10);
-			sound.Load("11", R.raw.11);
-			sound.Load("12", R.raw.12);
-			sound.Load("13", R.raw.13);
-			sound.Load("14", R.raw.14);
+			sound.Load("00", R.raw.a00);
+			sound.Load("01", R.raw.a01);
+			sound.Load("02", R.raw.a02);
+			sound.Load("03", R.raw.a03);
+			sound.Load("04", R.raw.a04);
+			sound.Load("05", R.raw.a05);
+			sound.Load("06", R.raw.a06);
+			sound.Load("07", R.raw.a07);
+			sound.Load("08", R.raw.a08);
+			sound.Load("09", R.raw.a09);
+			sound.Load("10", R.raw.a10);
+			sound.Load("11", R.raw.a11);
+			sound.Load("12", R.raw.a12);
+			sound.Load("13", R.raw.a13);
+			sound.Load("14", R.raw.a14);
 			
 			
 			
@@ -88,18 +86,61 @@ public class BitMakerView extends GameView {
 				@Override
 				public void onActionDown(float x, float y) {
 					// TODO 비트를 들려준다.
-					if(btn11 == false){
-						MusicPlayer.get("heart_beat").setLooping(true);
-						MusicPlayer.get("heart_beat").setVolume(100, 100);
-						MusicPlayer.get("heart_beat").start();
-						btn11 = true;
-					}else{
-						MusicPlayer.get("heart_beat").pause();
-						btn11 = false;
-					}
+					sound.Play("00", 10, 10, 0, 1);
 				}
 			});
-			
+			btn[1].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("01", 10, 10, 0, 1);
+				}
+			});
+			btn[2].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("02", 10, 10, 0, 1);
+				}
+			});
+			btn[3].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("03", 10, 10, 0, 1);
+				}
+			});
+		
 			btn[4].setOnActionControl(new IControllable() {
 				@Override
 				public void onActionUp(float x, float y) {
@@ -114,12 +155,132 @@ public class BitMakerView extends GameView {
 				@Override
 				public void onActionDown(float x, float y) {
 					// TODO 비트를 들려준다.
-					sound.Play("dung", 10, 10, 0, 1);
+					sound.Play("04", 10, 10, 0, 1);
+				}
+			});
+		
+			btn[5].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("05", 10, 10, 0, 1);
+				}
+			});
+			btn[6].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("06", 10, 10, 0, 1);
+				}
+			});
+			btn[7].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("07", 10, 10, 0, 1);
+				}
+			});
+			btn[8].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("08", 10, 10, 0, 1);
+				}
+			});
+			btn[9].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("09", 10, 10, 0, 1);
+				}
+			});
+			btn[10].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("10", 10, 10, 0, 1);
+				}
+			});
+			btn[11].setOnActionControl(new IControllable() {
+				@Override
+				public void onActionUp(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionMove(float x, float y) {
+					
+				}
+				
+				@Override
+				public void onActionDown(float x, float y) {
+					// TODO 비트를 들려준다.
+					sound.Play("11", 10, 10, 0, 1);
 				}
 			});
 			
 			
-			
+
 			btn[12].setOnActionControl(new IControllable() {
 				@Override
 				public void onActionUp(float x, float y) {
