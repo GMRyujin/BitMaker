@@ -27,13 +27,21 @@ public final class R {
         public static final int activity_main=0x7f070000;
     }
     public static final class raw {
-        public static final int dung=0x7f040000;
-        public static final int heart_beating_at_normal_speed=0x7f040001;
-        public static final int select=0x7f040002;
-        public static final int sound_drum1=0x7f040003;
-        public static final int sound_drum2=0x7f040004;
-        public static final int sound_drum3=0x7f040005;
-        public static final int sound_water1=0x7f040006;
+        public static final int a00=0x7f040000;
+        public static final int a01=0x7f040001;
+        public static final int a02=0x7f040002;
+        public static final int a03=0x7f040003;
+        public static final int a04=0x7f040004;
+        public static final int a05=0x7f040005;
+        public static final int a06=0x7f040006;
+        public static final int a07=0x7f040007;
+        public static final int a08=0x7f040008;
+        public static final int a09=0x7f040009;
+        public static final int a10=0x7f04000a;
+        public static final int a11=0x7f04000b;
+        public static final int a12=0x7f04000c;
+        public static final int a13=0x7f04000d;
+        public static final int a14=0x7f04000e;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
