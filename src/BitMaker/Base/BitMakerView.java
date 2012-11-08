@@ -50,13 +50,12 @@ public class BitMakerView extends GameView {
 			sound.Load("13", R.raw.a13);
 			sound.Load("14", R.raw.a14);
 			
-			
-			
 			int width = GetScreenWidth();
 			int height = GetScreenHeight();
 			
 			int buttonWidth = width/3;
-			int buttonHeight = height/5;
+			int buttonHeight = height/6;
+			int offsetY = 110;
 			
 			
 			int i = 0;
@@ -65,7 +64,7 @@ public class BitMakerView extends GameView {
 			for(int y = 0 ; y < 5; y++){
 				for(int x = 0 ; x < 3 ; x ++){
 					btn[y*3+x] = new AnimatedGameButton(loader.get("ButttonUp"), loader.get("ButttonDown"), 1000,1000
-							,buttonWidth*x,buttonHeight*y, buttonWidth*(x+1),buttonHeight*(y+1));
+							,buttonWidth*x,buttonHeight*y + offsetY, buttonWidth*(x+1),buttonHeight*(y+1) + offsetY);
 					btn[y*3+x].AddWorld();
 				}
 			}

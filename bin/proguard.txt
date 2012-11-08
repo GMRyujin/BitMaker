@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:14
+-keep class com.example.bitmaker.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.google.ads.AdActivity { <init>(...); }
+
